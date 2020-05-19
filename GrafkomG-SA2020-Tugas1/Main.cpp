@@ -3,7 +3,7 @@
 
 void myInit() {
 
-	glClearColor(0.0, 0.5, 1.0, 1.0);
+	glClearColor(0.0, 1.0, 1.0, 1.0);
 	glPointSize(5);
 	glLineWidth(2);
 	glMatrixMode(GL_PROJECTION);
@@ -99,6 +99,13 @@ void display() {
 	glVertex2f(180.0, 65.0);
 	glEnd();
 
+	glBegin(GL_POLYGON);
+	glVertex2f(40.0, 65.0);
+	glVertex2f(40.0, 120.0);
+	glVertex2f(70.0, 120.0);
+	glVertex2f(70.0, 65.0);
+	glEnd();
+
 	glColor3f(0.0, 0.0, 0.0);
 	glBegin(GL_LINE_LOOP);
 	glVertex2f(100.0, 65.0);
@@ -114,10 +121,26 @@ void display() {
 	glVertex2f(180.0, 65.0);
 	glEnd();
 
+	glBegin(GL_LINE_LOOP);
+	glVertex2f(40.0, 65.0);
+	glVertex2f(40.0, 120.0);
+	glVertex2f(70.0, 120.0);
+	glVertex2f(70.0, 65.0);
+	glEnd();
+
 	glBegin(GL_LINES);
 	glVertex2f(113.0, 65.0); glVertex2f(113.0, 120.0);
 	glVertex2f(100.0, 93.0); glVertex2f(125.0, 93.0);
+	glVertex2f(173.0, 65.0); glVertex2f(173.0, 120.0);
+	glVertex2f(165.0, 93.0); glVertex2f(180.0, 93.0);
+	glVertex2f(45.0, 65.0); glVertex2f(45.0, 120.0);
+	glVertex2f(50.0, 65.0); glVertex2f(50.0, 120.0);
+	glVertex2f(55.0, 65.0); glVertex2f(55.0, 120.0);
+	glVertex2f(60.0, 65.0); glVertex2f(60.0, 120.0);
+	glVertex2f(65.0, 65.0); glVertex2f(65.0, 120.0);
 	glEnd();
+
+	
 	
 
 	glFlush();
