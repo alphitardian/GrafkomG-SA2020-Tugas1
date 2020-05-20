@@ -3,7 +3,7 @@
 
 void myInit() {
 
-	glClearColor(0.6, 1.0, 1.0, 1.0);
+	glClearColor(0.4, 0.69, 1.0, 1.0);
 	glPointSize(5);
 	glLineWidth(2);
 	glMatrixMode(GL_PROJECTION);
@@ -326,10 +326,56 @@ void display() {
 	glVertex2f(600.0, 400.0);
 	glVertex2f(550.0, 350.0);
 	glEnd();
-	/* Sun Objet - End */
+	/* Sun Object - End */
 
-	/* Grass Object - Start */
-	/* Grass Objet - End */
+	/* Pool Object - Start */
+	/* Water - Start */
+	glColor3f(0.0, 0.5, 1.0);
+	glBegin(GL_POLYGON);
+	glVertex2f(480.0, 0.0);
+	glVertex2f(440.0, 55.0);
+	glColor3f(0.0, 0.75, 1.0);
+	glVertex2f(640.0, 55.0);
+	glVertex2f(640.0, 0.0);
+	glEnd();
+
+	glColor3f(0.6, 0.8, 1.0);
+	glBegin(GL_LINES);
+	glVertex2f(500.0, 30.0); glVertex2f(600.0, 30.0);
+	glVertex2f(570.0, 45.0); glVertex2f(610.0, 45.0);
+	glVertex2f(510.0, 20.0); glVertex2f(570.0, 20.0);
+	glEnd();
+	/* Water - End */
+
+	/* Rock - Start */
+	glColor3f(0.5, 0.5, 0.5);
+	glBegin(GL_POLYGON);
+	glVertex2f(410.0, 40.0);
+	glVertex2f(415.0, 70.0);
+	glColor3f(0.8, 0.8, 0.8);
+	glVertex2f(445.0, 70.0);
+	glVertex2f(450.0, 40.0);
+	glEnd();
+
+	glColor3f(0.5, 0.5, 0.5);
+	glBegin(GL_POLYGON);
+	glVertex2f(425.0, 20.0);
+	glVertex2f(430.0, 50.0);
+	glColor3f(0.7, 0.7, 0.7);
+	glVertex2f(460.0, 50.0);
+	glVertex2f(465.0, 20.0);
+	glEnd();
+
+	glColor3f(0.5, 0.5, 0.5);
+	glBegin(GL_POLYGON);
+	glVertex2f(440.0, 0.0);
+	glVertex2f(445.0, 30.0);
+	glColor3f(0.6, 0.6, 0.6);
+	glVertex2f(475.0, 30.0);
+	glVertex2f(480.0, 0.0);
+	glEnd();
+	/* Rock - End */
+	/* Pool Object - End */
 
 	glFlush();
 }
