@@ -2,18 +2,15 @@
 #include <GL/freeglut.h>
 
 void myInit() {
-
-	glClearColor(0.4, 0.69, 1.0, 1.0);
+	glClearColor(0.4, 0.7, 1.0, 1.0);
 	glPointSize(5);
 	glLineWidth(2);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0.0, 640.0, 0.0, 480.0);
-
 }
 
 void display() {
-
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	/* Land Object - Start */
@@ -55,7 +52,7 @@ void display() {
 	/* Roof - End */
 
 	/* Body - Start */
-	glColor3f(1.0, 1.0, 0.8);
+	glColor3d(1.0, 1.0, 0.8);
 	glBegin(GL_POLYGON);
 	glVertex2f(20.0, 140.0);
 	glVertex2f(20.0, 40.0);
@@ -63,7 +60,7 @@ void display() {
 	glVertex2f(90.0, 140.0);
 	glEnd();
 
-	glColor3f(1.0, 1.0, 0.1);
+	glColor3d(1.0, 1.0, 0.1);
 	glBegin(GL_POLYGON);
 	glVertex2f(90.0, 140.0);
 	glVertex2f(90.0, 40.0);
@@ -71,7 +68,7 @@ void display() {
 	glVertex2f(190.0, 140.0);
 	glEnd();
 
-	glColor3f(0.8, 0.0, 0.0);
+	glColor3d(0.8, 0.0, 0.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(140.0, 40.0);
 	glVertex2f(140.0, 105.0);
@@ -79,12 +76,12 @@ void display() {
 	glVertex2f(155.0, 40.0);
 	glEnd();
 
-	glColor3f(0.0, 0.0, 0.0);
+	glColor3d(0.0, 0.0, 0.0);
 	glBegin(GL_POINTS);
 	glVertex2f(153.0, 75.0);
 	glEnd();
 
-	glColor3f(1.0, 1.0, 1.0);
+	glColor3d(1.0, 1.0, 1.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(100.0, 65.0);
 	glVertex2f(100.0, 120.0);
@@ -106,7 +103,7 @@ void display() {
 	glVertex2f(70.0, 65.0);
 	glEnd();
 
-	glColor3f(0.0, 0.0, 0.0);
+	glColor3d(0.0, 0.0, 0.0);
 	glBegin(GL_LINE_LOOP);
 	glVertex2f(100.0, 65.0);
 	glVertex2f(100.0, 120.0);
@@ -143,7 +140,7 @@ void display() {
 	/* House Object - End */
 
 	/* Tree Object - Start */
-	glColor3f(0.6, 0.29, 0.0);
+	glColor3d(0.6, 0.29, 0.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(240.0, 40.0);
 	glVertex2f(250.0, 70.0);
@@ -151,28 +148,28 @@ void display() {
 	glVertex2f(280.0, 40.0);
 	glEnd();
 
-	glColor3f(0.0, 0.6, 0.0);
+	glColor3d(0.0, 0.6, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(220.0, 70.0);
 	glVertex2f(260.0, 110.0);
 	glVertex2f(300.0, 70.0);
 	glEnd();
 
-	glColor3f(0.0, 0.8, 0.0);
+	glColor3d(0.0, 0.8, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(225.0, 90.0);
 	glVertex2f(260.0, 130.0);
 	glVertex2f(295.0, 90.0);
 	glEnd();
 
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3d(0.0, 1.0, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(230.0, 110.0);
 	glVertex2f(260.0, 150.0);
 	glVertex2f(290.0, 110.0);
 	glEnd();
 	/* ------------ */
-	glColor3f(0.6, 0.29, 0.0);
+	glColor3d(0.6, 0.29, 0.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(340.0, 40.0);
 	glVertex2f(350.0, 70.0);
@@ -180,28 +177,28 @@ void display() {
 	glVertex2f(380.0, 40.0);
 	glEnd();
 
-	glColor3f(0.0, 0.6, 0.0);
+	glColor3d(0.0, 0.6, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(320.0, 70.0);
 	glVertex2f(360.0, 110.0);
 	glVertex2f(400.0, 70.0);
 	glEnd();
 
-	glColor3f(0.0, 0.8, 0.0);
+	glColor3d(0.0, 0.8, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(325.0, 90.0);
 	glVertex2f(360.0, 130.0);
 	glVertex2f(395.0, 90.0);
 	glEnd();
 
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3d(0.0, 1.0, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(330.0, 110.0);
 	glVertex2f(360.0, 150.0);
 	glVertex2f(390.0, 110.0);
 	glEnd();
 	/* ------------ */
-	glColor3f(0.6, 0.29, 0.0);
+	glColor3d(0.6, 0.29, 0.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(290.0, 40.0);
 	glVertex2f(300.0, 70.0);
@@ -209,28 +206,28 @@ void display() {
 	glVertex2f(330.0, 40.0);
 	glEnd();
 
-	glColor3f(0.0, 0.6, 0.0);
+	glColor3d(0.0, 0.6, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(270.0, 70.0);
 	glVertex2f(310.0, 110.0);
 	glVertex2f(350.0, 70.0);
 	glEnd();
 
-	glColor3f(0.0, 0.8, 0.0);
+	glColor3d(0.0, 0.8, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(275.0, 90.0);
 	glVertex2f(310.0, 130.0);
 	glVertex2f(345.0, 90.0);
 	glEnd();
 
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3d(0.0, 1.0, 0.0);
 	glBegin(GL_TRIANGLES);
 	glVertex2f(280.0, 110.0);
 	glVertex2f(310.0, 150.0);
 	glVertex2f(340.0, 110.0);
 	glEnd();
 	/* ------------ */
-	glColor3f(0.0, 0.5, 0.0);
+	glColor3d(0.0, 0.5, 0.0);
 	glBegin(GL_LINE_STRIP);
 	glVertex2f(280.0, 110.0); glVertex2f(310.0, 150.0); 
 	glVertex2f(340.0, 110.0); glVertex2f(328.0, 110.0);
@@ -240,7 +237,7 @@ void display() {
 	glVertex2f(292.0, 110.0); glVertex2f(280.0, 110.0);
 	glEnd();
 
-	glColor3f(0.0, 0.0, 0.0);
+	glColor3d(0.0, 0.0, 0.0);
 	glBegin(GL_LINE_STRIP);
 	glVertex2f(300.0, 70.0);
 	glVertex2f(290.0, 40.0);	
@@ -250,7 +247,7 @@ void display() {
 	/* Tree Object - End */
 
 	/* Cloud Object - Start */
-	glColor3f(1.0, 1.0, 1.0);
+	glColor3d(1.0, 1.0, 1.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(55.0, 310.0);
 	glVertex2f(85.0, 340.0);
@@ -265,7 +262,7 @@ void display() {
 	glVertex2f(385.0, 310.0);
 	glEnd();
 
-	glColor3f(0.9, 1.0, 1.0);
+	glColor3d(0.9, 1.0, 1.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(20.0, 300.0);
 	glVertex2f(50.0, 330.0);
@@ -310,7 +307,7 @@ void display() {
 	/* Cloud Object - End */
 
 	/* Sun Object - Start */
-	glColor3f(1.0, 0.8, 0.4);
+	glColor3d(1.0, 0.8, 0.4);
 	glBegin(GL_POLYGON);
 	glVertex2f(515.0, 360.0);
 	glVertex2f(515.0, 440.0);
@@ -318,11 +315,11 @@ void display() {
 	glVertex2f(585.0, 360.0);
 	glEnd();
 
-	glColor3f(1.0, 0.73, 0.0);
+	glColor3d(1.0, 0.73, 0.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(500.0, 400.0);
 	glVertex2f(550.0, 450.0);
-	glColor3f(1.0, 0.9, 0.7);
+	glColor3d(1.0, 0.9, 0.7);
 	glVertex2f(600.0, 400.0);
 	glVertex2f(550.0, 350.0);
 	glEnd();
@@ -330,16 +327,16 @@ void display() {
 
 	/* Pool Object - Start */
 	/* Water - Start */
-	glColor3f(0.0, 0.5, 1.0);
+	glColor3d(0.0, 0.5, 1.0);
 	glBegin(GL_POLYGON);
 	glVertex2f(480.0, 0.0);
 	glVertex2f(440.0, 55.0);
-	glColor3f(0.0, 0.75, 1.0);
+	glColor3d(0.0, 0.75, 1.0);
 	glVertex2f(640.0, 55.0);
 	glVertex2f(640.0, 0.0);
 	glEnd();
 
-	glColor3f(0.6, 0.8, 1.0);
+	glColor3d(0.6, 0.8, 1.0);
 	glBegin(GL_LINES);
 	glVertex2f(500.0, 30.0); glVertex2f(600.0, 30.0);
 	glVertex2f(570.0, 45.0); glVertex2f(610.0, 45.0);
@@ -348,41 +345,75 @@ void display() {
 	/* Water - End */
 
 	/* Rock - Start */
-	glColor3f(0.5, 0.5, 0.5);
+	glColor3d(0.5, 0.5, 0.5);
 	glBegin(GL_POLYGON);
 	glVertex2f(410.0, 40.0);
 	glVertex2f(415.0, 70.0);
-	glColor3f(0.8, 0.8, 0.8);
+	glColor3d(0.8, 0.8, 0.8);
 	glVertex2f(445.0, 70.0);
 	glVertex2f(450.0, 40.0);
 	glEnd();
 
-	glColor3f(0.5, 0.5, 0.5);
+	glColor3d(0.5, 0.5, 0.5);
 	glBegin(GL_POLYGON);
 	glVertex2f(425.0, 20.0);
 	glVertex2f(430.0, 50.0);
-	glColor3f(0.7, 0.7, 0.7);
+	glColor3d(0.7, 0.7, 0.7);
 	glVertex2f(460.0, 50.0);
 	glVertex2f(465.0, 20.0);
 	glEnd();
 
-	glColor3f(0.5, 0.5, 0.5);
+	glColor3d(0.5, 0.5, 0.5);
 	glBegin(GL_POLYGON);
 	glVertex2f(440.0, 0.0);
 	glVertex2f(445.0, 30.0);
-	glColor3f(0.6, 0.6, 0.6);
+	glColor3d(0.6, 0.6, 0.6);
 	glVertex2f(475.0, 30.0);
 	glVertex2f(480.0, 0.0);
 	glEnd();
 	/* Rock - End */
 	/* Pool Object - End */
 
+	/* Boat Object - Start */
+	glColor3d(0.2, 0.0, 0.0);
+	glBegin(GL_POLYGON);
+	glVertex2f(520.0, 90.0);
+	glVertex2f(540.0, 50.0);
+	glColor3d(0.5, 0.0, 0.0);
+	glVertex2f(600.0, 50.0);
+	glVertex2f(620.0, 90.0);
+	glEnd();
+
+	glColor3d(0.2, 0.0, 0.0);
+	glBegin(GL_POLYGON);
+	glVertex2f(520.0, 90.0);
+	glVertex2f(520.0, 95.0);
+	glVertex2f(620.0, 95.0);
+	glVertex2f(620.0, 90.0);
+	glEnd();
+
+	glColor3d(0.2, 0.0, 0.0);
+	glBegin(GL_POLYGON);
+	glVertex2f(570.0, 95.0);
+	glVertex2f(570.0, 195.0);
+	glVertex2f(575.0, 195.0);
+	glVertex2f(575.0, 95.0);
+	glEnd();
+
+	glColor3d(1.0, 1.0, 1.0);
+	glBegin(GL_TRIANGLES);
+	glVertex2f(570.0, 110.0);
+	glVertex2f(530.0, 110.0);
+	glColor3d(0.7, 0.7, 0.7);
+	glVertex2f(570.0, 195.0);
+	glEnd();
+	/* Boat Object - End */
+
 	glFlush();
 }
 
 
 int main(int argc, char** argv) {
-
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(640, 480);
